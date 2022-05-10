@@ -1,0 +1,41 @@
+.error {
+    img {
+        width: 16rem;
+        height: auto;
+    }
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    padding-top: 2rem;
+    gap: 1rem;
+    h1{
+        margin: 1rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .main {
+        gap: 2rem;
+    }
+}
+
+.home {
+    width: 16rem;
+}
+
+.social {
+    .insta {
+        margin: 5rem;
+    }
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+        fill: black;
+    }
+}

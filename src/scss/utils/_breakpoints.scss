@@ -1,0 +1,23 @@
+@mixin tablet {
+    @media (min-width:768px) {
+        @content
+    }
+};
+
+@mixin desktop {
+    @media (min-width:1024px) {
+        @content
+    }
+};
+
+@mixin hiResDisp {
+    @media (min-width:2560px) {
+        @content
+    }
+};
+
+@mixin mobileOnly {
+    @media (max-width:767px) {
+        @content
+    }
+}

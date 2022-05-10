@@ -1,0 +1,120 @@
+$primary: #13aa52;
+
+.btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-fill{
+    border: 2px solid $secondary-color;
+}
+
+.btn-fill-primary{
+    border: 2px solid $primary;
+}
+
+
+
+/* 1 */
+.btn-outline {
+    transition: all 0.3s ease;
+    height: 16px;
+        border: 2px solid $secondary-color;
+
+}
+
+.btn-outline:hover {
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+}
+
+
+/* 5 */
+.btn-fill, .btn-fill-primary {
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-fill {
+    background: $secondary-color;
+}
+
+
+.btn-fill-primary {
+    background: $primary;
+}
+
+
+.btn-fill:hover,
+.btn-fill-primary:hover {
+    background: transparent;
+    color: $secondary-color;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+}
+
+.btn-fill:hover {
+        color: $secondary-color;
+}
+
+.btn-fill-primary:hover {
+        color: $primary;
+}
+
+.btn-fill:before,
+.btn-fill:after,
+.btn-fill-primary:before,
+.btn-fill-primary:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: $secondary-color;
+    transition: 400ms ease all;
+}
+.btn-fill:before,
+.btn-fill:after {
+    background: $secondary-color;
+}
+
+.btn-fill-primary:before,
+.btn-fill-primary:after {
+  background: $primary;
+}
+
+
+
+.btn-fill:after,
+.btn-fill-primary:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-fill:hover:before,
+.btn-fill:hover:after,
+.btn-fill-primary:before,
+.btn-fill-primary:after {
+    width: 100%;
+    transition: 800ms ease all;
+}

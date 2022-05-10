@@ -1,0 +1,47 @@
+$primary: #5cdb95;
+$primary-light: #8ee4af;
+$primary-dark: #379683;
+$secondary-color: #053865;
+$secondary-light: #053865;
+$accent:#FBEC04;
+$bg-primary-light:#f4fdf4;
+$footer-bg:#062315;
+$text-dark:#343a40;
+$text-light:#f8f9fa;
+$text-muted:#6c757d;
+$gray-200:#e9ecef;
+$gray-300:#dee2e6;
+$secondary-light: #009fbd;
+
+
+.bg-light{
+    background-color: #f8f9fa;
+}
+
+.bg-secondary-light{
+    background-color: $secondary-light !important;
+}
+
+.bg-primary-light{
+    background-color: $primary-light !important;
+}
+
+.bg-primary{
+    background-color: $primary !important;
+}
+
+.bg-secondary{
+    background-color: $secondary-color;
+}
+
+.text-light{
+    color: $text-light !important;
+}
+
+.text-muted{
+    color: #adb5bd;
+}
+
+.bg-footer{
+ background-color: $footer-bg;
+}

@@ -1,0 +1,56 @@
+
+.footer {
+
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    ul {
+        padding: 0;
+        
+        li {
+            padding-bottom: 1rem;
+
+            a {
+                word-wrap: break-word;
+                font-size: 1rem;
+                &:hover {
+                    color: $secondary-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.footer-logo {
+    padding-top: 1rem;
+    svg {
+        width: 8rem;
+        height: auto;
+    }
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+.social {
+    svg {
+        fill: #dee2e6;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+.contact{
+    svg{
+        width: 1.3rem;
+    }
+}
+
+.insta {
+    margin: 3rem;
+}

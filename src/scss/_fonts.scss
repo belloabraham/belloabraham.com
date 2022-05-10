@@ -1,0 +1,17 @@
+ @font-face {
+     font-family: Hamlin;
+     src: url('fonts/Hamlin-Bold.woff2');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ body{
+     font-family: Hamlin;
+ }
+
+html{
+     font-size: 100%;   
+    @include hiResDisp{
+        font-size: 150%;
+    }
+}

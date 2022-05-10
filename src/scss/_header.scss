@@ -1,0 +1,50 @@
+@import './mobile-menu';
+@import './components/mega-menu';
+
+
+//Navigation
+.header {
+    padding: .5rem 0;
+    padding-top: 1rem;
+}
+
+
+.logo {
+    svg {
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media (min-width:768px) {
+    section {
+        padding: 2rem;
+    }
+
+    .header {
+     //   padding: 1.5rem 0;
+    }
+
+    .logo {
+        svg {
+            width: 110px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+
+    //Mobile ony
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu__toggler, .menu {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+    }
+}

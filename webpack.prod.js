@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = merge(common, {
@@ -91,6 +92,11 @@ module.exports = merge(common, {
     ]
   },
   plugins: [
+     new CopyPlugin({
+      patterns: [
+        { from: "./src/humans.txt", to: "." },
+      ],
+    }),
     new MiniCssExtractPlugin({ filename: "[name].[contenthash].min.css" }), //3. Rename CSS with hash as file changes and .min ext then move to style file
     new CleanWebpackPlugin() //Delete previous hash files has new ones get generated
   ],

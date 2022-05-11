@@ -25,10 +25,31 @@ module.exports = merge(common, {
     }),
      new HtmlWebpackPlugin({
       inject:'body',
-      filename:"privacy/index.html", //Name of the file to copy to dist folder in prod, defaults to index
+      filename:"bsh-android/index.html", 
       favicon: "./src/favicon.ico",
-      template: "./src/privacy/index.html",
-      chunks:['main','privacy'] //What script to inject for template, defaults to index
+      template: "./src/bsh-android/index.html",
+      chunks:['main','project'] 
+     }),
+      new HtmlWebpackPlugin({
+      inject:'body',
+      filename:"bsh-webiste/index.html", 
+      favicon: "./src/favicon.ico",
+      template: "./src/bsh-website/index.html",
+      chunks:['main','project'] 
+      }),
+       new HtmlWebpackPlugin({
+      inject:'body',
+      filename:"bsh-angular/index.html", 
+      favicon: "./src/favicon.ico",
+      template: "./src/bsh-angular/index.html",
+      chunks:['main','project'] 
+       }),
+        new HtmlWebpackPlugin({
+      inject:'body',
+      filename:"ccc-hymns-android/index.html", 
+      favicon: "./src/favicon.ico",
+      template: "./src/ccc-hymns-android/index.html",
+      chunks:['main','project'] 
     }),
   ],
   module: {

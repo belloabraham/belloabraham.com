@@ -1,0 +1,24 @@
+.social {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+    list-style: none;
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+        transition: all ease-in-out .5s;
+        transform: scale(1);
+    }
+}
+
+
+.social a:hover svg {
+    -webkit-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+    fill: $secondary-color;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+

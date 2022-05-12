@@ -1,5 +1,4 @@
 @import './mobile-menu';
-@import './components/mega-menu';
 
 
 //Navigation
@@ -19,10 +18,6 @@
 @media (min-width:768px) {
     section {
         padding: 2rem;
-    }
-
-    .header {
-     //   padding: 1.5rem 0;
     }
 
     .logo {

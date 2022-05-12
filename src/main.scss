@@ -5,6 +5,10 @@
 @import './scss/header';
 
 
+.d-none{
+    display: none !important;
+}
+
 .text-center {
     text-align: center !important;
 }
@@ -39,11 +43,12 @@ body {
 ol,
 ul {
     list-style: none !important;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 section {

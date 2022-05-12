@@ -1,0 +1,73 @@
+$secondary-light: #053865;
+
+
+.link-secondary {
+    color: #5cdb95;
+    text-decoration: underline;
+
+    &:hover {
+        color: $secondary-light;
+    }
+}
+
+.main {
+    color: white;
+    background-image: radial-gradient(circle farthest-corner at -1% 57.5%, rgba(19, 170, 82, 1) 0%, rgba(0, 102, 43, 1) 90%);
+    padding-bottom: 2rem;
+}
+
+.main-content {
+    margin-top: 2rem;
+}
+
+
+.cta {
+    width: 16rem;
+    margin-top: 1rem;
+}
+
+.bello-abraham {
+
+    img {
+        width: 20rem;
+        margin-top: 2rem;
+        height: auto;
+    }
+}
+
+.headline {
+    padding-top: 2rem;
+
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (min-width:768px) {
+
+    .why-us {
+        img {
+            width: 14rem;
+        }
+    }
+
+    .headline {
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .bello-abraham {
+        img {
+            margin-top: 0;
+            width: 17rem;
+            height: auto;
+        }
+    }
+}

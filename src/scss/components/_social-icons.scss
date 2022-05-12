@@ -13,12 +13,11 @@
 }
 
 
-.social a:hover svg {
-    -webkit-transition: all ease-in-out .2s;
-    transition: all ease-in-out .2s;
-    fill: $secondary-color;
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+.social a:hover {
+    svg {
+        transition: all ease-in-out .2s;
+        fill: $secondary-color;
+        transform: scale(1.5);
+    }
+
 }
-
-

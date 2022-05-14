@@ -12,7 +12,7 @@ const closeTriggerLeft =   closeTrigger.find('.close-trigger-bar.left');
 const closeTriggerRight = closeTrigger.find('.close-trigger-bar.right');
 const mNavContainer = $('.m-nav-container');  
 
-const logo = $('.logo');
+const logo =  $('.logo');
 const body = $('body');
 
 const menu = $('.menu');

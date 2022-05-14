@@ -1,6 +1,8 @@
 @import './scss/global/index';
 @import './scss/footer';
 @import '~aos/src/sass/aos.scss';
+@import './scss/animation/gsap-reveal';
+
 
 .no-scroll {
     width: 100vw;

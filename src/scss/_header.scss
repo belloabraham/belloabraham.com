@@ -1,13 +1,14 @@
-@import './mobile-menu';
-
+@import './components/mobile-menu';
 
 .nav {
     padding-right: 1rem;
+
     ul {
         gap: 2rem;
 
         a {
             color: white;
+
             &:hover {
                 text-decoration: underline;
                 color: rgba(255, 255, 255, 0.5)
@@ -32,6 +33,7 @@
 
         svg {
             width: 1.5rem;
+            opacity: 1 !important;
             height: auto;
             transition: all ease-in-out .5s;
             transform: scale(1);
@@ -44,8 +46,6 @@
 
     }
 }
-
-
 
 
 @media (min-width:768px) {
@@ -61,11 +61,16 @@
 }
 
 @media (max-width:767px) {
-
     //Mobile ony
     .logo {
         text-align: center;
         width: 100%;
+    }
+
+    .header {
+        .container {
+            justify-content: center;
+        }
     }
 
     .menu__toggler,

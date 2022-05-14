@@ -1,9 +1,12 @@
-@import '~normalize.css/normalize.css';
 @import './scss/global/index';
 @import './scss/footer';
 @import '~aos/src/sass/aos.scss';
-@import './scss/header';
 
+.no-scroll {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
+}
 
 .d-none{
     display: none !important;

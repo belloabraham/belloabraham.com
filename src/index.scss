@@ -1,5 +1,12 @@
+@import './scss/header';
+
 $secondary-light: #053865;
 
+
+.seven:nth-child(1) {
+    top: 25%;
+    left: 40%;
+}
 
 .link-secondary {
     color: #5cdb95;
@@ -13,8 +20,9 @@ $secondary-light: #053865;
 .main {
     color: white;
     background-image: radial-gradient(circle farthest-corner at -1% 57.5%, rgba(19, 170, 82, 1) 0%, rgba(0, 102, 43, 1) 90%);
-    padding-bottom: 2rem;
+    padding-bottom: 2rem;   
 }
+
 
 .main-content {
     margin-top: 2rem;

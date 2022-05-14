@@ -12,7 +12,7 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html", //Template to inject js and commonjs css
-      inject:'body', //Where to inject js and commonjs css for styles in template, defaults to head
+     // inject:'body', //Where to inject js and commonjs css for styles in template, defaults to head
       favicon: "./src/favicon.ico", //locaton of favicon to inject in template head
       chunks:['main','index'] 
     }),

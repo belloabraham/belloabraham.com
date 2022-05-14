@@ -1,6 +1,7 @@
-/*
- * MENU BUTTON
- */
+
+
+$gray-200:#e9ecef;
+
 .menu__toggler {
     position: absolute;
     top: 1rem;
@@ -11,7 +12,6 @@
     width: 28px;
     outline: none;
     cursor: pointer;
-   // display: flex;
     align-items: center;
 
     span,

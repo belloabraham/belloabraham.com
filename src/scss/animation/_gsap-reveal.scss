@@ -1,17 +1,17 @@
 
 $cover-background:#034007;
 
-.gsap-reveal-hero {
+.gsap-reveal-text {
     line-height: 0;
 }
 
-.gsap-reveal-hero .reveal-wrap {
+.gsap-reveal-text .reveal-wrap {
     position: relative;
     overflow: hidden;
     display: inline-block;
 }
 
-.gsap-reveal-hero .reveal-wrap .cover {
+.gsap-reveal-text .reveal-wrap .cover {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,11 +22,9 @@ $cover-background:#034007;
     z-index: 2;
 }
 
-.gsap-reveal-hero .reveal-wrap .reveal-content {
+.gsap-reveal-text .reveal-wrap .reveal-content {
     line-height: 1.5;
     z-index: 1;
     display: inline-block;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
 }

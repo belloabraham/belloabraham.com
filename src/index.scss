@@ -1,12 +1,15 @@
 @forward './scss/header';
 @forward './scss/footer';
+@use './scss/variables/colors'  as *;
 
 $secondary-light: #053865;
 
-
-.seven:nth-child(1) {
-    top: 25%;
-    left: 40%;
+.tech-stack{
+    color: $gray-200;
+    svg{
+        width: 13rem;
+        height: 13rem;
+    }
 }
 
 .link-secondary {

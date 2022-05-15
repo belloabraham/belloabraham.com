@@ -1,5 +1,6 @@
-$secondary-color: #053865;
-$gray-200: #e9ecef;
+@use '../variables/colors' as *;
+@use  '../utils/breakpoints' as *;
+
 $white: #ffffff;
 
 $slide: all 0.3s cubic-bezier(.55, 0, .1, 1);
@@ -44,6 +45,9 @@ $slide: all 0.3s cubic-bezier(.55, 0, .1, 1);
                 width: 100%;
             }
         }
+    }
+    @include tablet{
+        display: none;
     }
 }
 
@@ -187,9 +191,3 @@ $slide: all 0.3s cubic-bezier(.55, 0, .1, 1);
     }
 }
 
-
-@media (min-width:768px) {
-    .menu-trigger {
-        display: none;
-    }
-}

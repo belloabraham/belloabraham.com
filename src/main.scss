@@ -1,7 +1,6 @@
-@import './scss/global/index';
-@import './scss/footer';
-@import '~aos/src/sass/aos.scss';
-@import './scss/animation/gsap-reveal';
+@forward  './scss/global/index';
+@forward  '~aos/src/sass/aos.scss';
+@forward './scss/animation/gsap-reveal';
 
 
 .no-scroll {

@@ -1,4 +1,6 @@
- @font-face {
+@use  './utils/breakpoints' as *;
+
+@font-face {
      font-family: Hamlin;
      src: url('fonts/Hamlin-Bold.woff2');
      font-weight: normal;

@@ -1,14 +1,37 @@
 @forward './scss/header';
 @forward './scss/footer';
-@use './scss/variables/colors'  as *;
+@use './scss/variables/colors'as *;
 
 $secondary-light: #053865;
 
-.tech-stack{
+.projects{
     color: $gray-200;
-    svg{
-        width: 13rem;
-        height: 13rem;
+}
+
+.tech-stack {
+
+    h4 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+    svg {
+        width: 8rem;
+        height: 8rem;
+        fill: #00662b;
+    }
+}
+
+.about{
+
+    header{
+        margin-bottom: 1rem;
+        h2{
+            margin-bottom: 2rem;
+            font-size: 2rem !important;
+        }
+        h3{
+            font-size: 1.5rem !important;
+        }
     }
 }
 
@@ -24,7 +47,7 @@ $secondary-light: #053865;
 .main {
     color: white;
     background-image: radial-gradient(circle farthest-corner at -1% 57.5%, rgba(19, 170, 82, 1) 0%, rgba(0, 102, 43, 1) 90%);
-    padding-bottom: 2rem;   
+    padding-bottom: 2rem;
 }
 
 
@@ -58,12 +81,6 @@ $secondary-light: #053865;
 
 
 @media (min-width:768px) {
-
-    .why-us {
-        img {
-            width: 14rem;
-        }
-    }
 
     .headline {
         h1 {

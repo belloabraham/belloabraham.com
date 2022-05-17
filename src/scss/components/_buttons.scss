@@ -1,4 +1,5 @@
 @use '../variables/colors' as *;
+@use '../utils/breakpoints' as *;
 $primary: #13aa52;
 
 .btn {
@@ -13,6 +14,9 @@ $primary: #13aa52;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
+    @include hiResDisp{
+        height: 45px;
+    }
 }
 
 .btn-fill{

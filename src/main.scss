@@ -1,9 +1,12 @@
 @forward './scss/global/index';
 @forward '~aos/src/sass/aos.scss';
 @forward './scss/animation/gsap-reveal';
+@forward  './scss/components/contact-form';
 @use './scss/variables/colors'as *;
 
-
+.btn-send-mail{
+    width: 100%;
+}
 .my-1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -66,7 +69,7 @@ a {
 }
 
 section {
-    padding: 2rem 1rem;
+    padding: 4rem 1rem !important; 
 
     header {
         h2 {
@@ -76,7 +79,7 @@ section {
         }
 
         h3 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
 
         margin-bottom: 1rem !important;

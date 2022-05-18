@@ -4,36 +4,129 @@
 
 $secondary-light: #053865;
 
-.projects{
+.projects {
     color: $gray-200;
 
 }
 
 .tech-stack {
+    position: relative;
 
     h4 {
         font-size: 1.5rem;
         text-transform: capitalize;
     }
+
     svg {
+        width: 4rem;
+        height: 4rem;
+        fill: rgba($color: #00662b, $alpha: 0.3);
+        position: absolute;
+        z-index: -1;
+    }
+
+    svg.stack {
+        position: static;
         width: 8rem;
         height: 8rem;
+        opacity: 1;
         fill: #00662b;
+    }
+
+    svg.angular {
+        padding: 1rem;
+    }
+
+    .webpack {
+        left: 5%;
+        top: 80%
+    }
+
+    .sass {
+        top: 77%;
+        left: 50%;
+    }
+
+    .html {
+        top: 22%;
+        left: 66%;
+    }
+
+    .git {
+        top: 86%;
+        left: 95%;
+    }
+
+    .github {
+        left: 10%;
+        bottom: 50%;
+    }
+
+    .stackoverflow {
+        left: 30%;
+        top: 55%;
+    }
+
+    .gitlab {
+        top: 33%;
+        left: 90%;
+    }
+
+    .postgres {
+        left: 63%;
+        top: 65%;
+    }
+
+    .kubernetes {
+        left: 85%;
+        top: 65%;
+    }
+
+    .csharp {
+        left: 40%;
+        top: 20%
+    }
+
+    .gcloud {
+        left: 66%;
+        top: 10%;
+    }
+
+    .firebase {
+        left: 22%;
+        top: 15%;
+    }
+
+    .typescript {
+        left: 74%;
+        top: 87%
+    }
+
+    .visual-studio {
+        top: 50%;
+    }
+
+    .java {
+        left: 80%;
+        top: 5%;
+    }
+
+    .android-studio {
+        left: 73%;
+        top: 53%;
+    }
+
+    .kotlin {
+        left: 40%;
+        top: 70%;
+    }
+
+    .javascript {
+        left: 50%;
+        top: 50%;
     }
 }
 
-.contact, .about{
-    header{
-        margin-bottom: 1rem;
-        h2{
-            margin-bottom: 2rem;
-            font-size: 2rem !important;
-        }
-        h3{
-            font-size: 1.5rem !important;
-        }
-    }
-}
 
 .link-secondary {
     color: #5cdb95;

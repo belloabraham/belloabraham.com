@@ -26,23 +26,23 @@ $secondary-light: #053865;
     svg {
         width: 4rem;
         height: 4rem;
-        fill: rgba($color: #00662b, $alpha: 0.3);
+        fill: rgba($color: #00662b, $alpha: 0.2);
         position: absolute;
         z-index: -1;
     }
 
     svg.stack {
         position: static;
-        width: 8rem;
-        height: 8rem;
+        width: 10rem;
+        height: 10rem;
         opacity: 1;
         fill: #00662b;
     }
 
 
     .webpack {
-        left: 5%;
-        top: 80%
+        left: 15%;
+        top: 70%
     }
 
     .sass {
@@ -56,8 +56,8 @@ $secondary-light: #053865;
     }
 
     .git {
-        top: 86%;
-        left: 95%;
+        top: 6%;
+        left: 90%;
     }
 
     .github {
@@ -86,13 +86,13 @@ $secondary-light: #053865;
     }
 
     .csharp {
-        left: 40%;
-        top: 20%
+        left: 35%;
+        top: 5%
     }
 
     .gcloud {
         left: 66%;
-        top: 10%;
+        top: 5%;
     }
 
     .firebase {
@@ -102,7 +102,7 @@ $secondary-light: #053865;
 
     .typescript {
         left: 74%;
-        top: 87%
+        top: 80%
     }
 
     .visual-studio {
@@ -125,7 +125,7 @@ $secondary-light: #053865;
     }
 
     .javascript {
-        left: 60%;
+        left: 55%;
         top: 40%;
     }
 }
@@ -154,8 +154,7 @@ $secondary-light: #053865;
     }
 
     p{
-        font-size: 1.3rem;
-        line-height: .5;
+        font-size: 1.5rem;
         letter-spacing: 1px;
     }
 }

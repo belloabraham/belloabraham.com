@@ -1,19 +1,32 @@
-@use  './utils/breakpoints' as *;
+@use './utils/breakpoints'as *;
+
 
 @font-face {
-     font-family: Hamlin;
-     src: url('fonts/Hamlin-Bold.woff2');
-     font-weight: normal;
-     font-style: normal;
- }
+    font-family: liber;
+    src: url('fonts/LiberGrotesqueFamily-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
- body{
-     font-family: Hamlin;
- }
+@font-face {
+    font-family: looker;
+    src: url('fonts/looker-ultrabold-webfont.woff2') format('woff2'),
+    url('fonts/looker-ultrabold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 
-html{
-     font-size: 100%;   
-    @include hiResDisp{
+body {
+    font-family: looker;
+}
+
+html {
+    font-size: 100%;
+    @include hiResDisp {
         font-size: 150%;
     }
+}
+
+h1,h3, h4, h2, h5, h6{
+    font-family: liber;
 }

@@ -1,4 +1,5 @@
 @forward './components/mobile-menu';
+@use  './variables/colors' as *;
 
 .nav {
     padding-right: 1rem;
@@ -11,7 +12,8 @@
         gap: 2rem;
 
         a {
-            color: white;
+            color: $gray-300;
+            font-size: 1.1rem;
 
             &:hover {
                 text-decoration: underline;
@@ -65,7 +67,7 @@
 }
 
 @media (max-width:767px) {
-    //Mobile ony
+    //Mobile only
     .logo {
         text-align: center;
         width: 100%;

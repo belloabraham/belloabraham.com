@@ -10,6 +10,12 @@
     }
 };
 
+@mixin desktop1440 {
+    @media (min-width:1440px) {
+        @content
+    }
+};
+
 @mixin hiResDisp {
     @media (min-width:2560px) {
         @content

@@ -6,15 +6,21 @@ $secondary-light: #053865;
 
 .projects {
     color: $gray-200;
+}
 
+.about{
+    p{
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
 }
 
 .tech-stack {
     position: relative;
 
     h4 {
-        font-size: 1.5rem;
         text-transform: capitalize;
+        font-size: 1.5rem;
     }
 
     svg {
@@ -33,9 +39,6 @@ $secondary-light: #053865;
         fill: #00662b;
     }
 
-    svg.angular {
-        padding: 1rem;
-    }
 
     .webpack {
         left: 5%;
@@ -122,8 +125,8 @@ $secondary-light: #053865;
     }
 
     .javascript {
-        left: 50%;
-        top: 50%;
+        left: 60%;
+        top: 40%;
     }
 }
 
@@ -146,6 +149,15 @@ $secondary-light: #053865;
 
 .main-content {
     margin-top: 2rem;
+    h1{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.3rem;
+        line-height: .5;
+        letter-spacing: 1px;
+    }
 }
 
 
@@ -163,27 +175,7 @@ $secondary-light: #053865;
     }
 }
 
-.headline {
-    padding-top: 2rem;
-
-    h1 {
-        font-size: 1.6rem;
-        margin-bottom: 2rem;
-    }
-}
-
-
 @media (min-width:768px) {
-
-    .headline {
-        h1 {
-            font-size: 2rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-        }
-    }
 
     .bello-abraham {
         img {

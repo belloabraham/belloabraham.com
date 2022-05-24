@@ -41,54 +41,6 @@ module.exports = merge(common, {
           removeComments: true
         }
       }),
-      new HtmlWebpackPlugin({ 
-         inject:'body',
-         template: "./src/bsh-android/index.html",
-         favicon: "./src/favicon.ico",
-        filename: "bsh-android/index.html",
-         chunks:["main","project"],
-         minify: {
-          removeAttributeQuotes: true,
-          collapseWhitespace: true,
-          removeComments: true
-        }
-      }),
-       new HtmlWebpackPlugin({ 
-         inject:'body',
-         template: "./src/bsh-website/index.html",
-         favicon: "./src/favicon.ico",
-        filename: "bsh-website/index.html",
-         chunks:["main","project"],
-         minify: {
-          removeAttributeQuotes: true,
-          collapseWhitespace: true,
-          removeComments: true
-        }
-       }),
-        new HtmlWebpackPlugin({ 
-         inject:'body',
-         template: "./src/bsh-angular/index.html",
-         favicon: "./src/favicon.ico",
-        filename: "bsh-angular/index.html",
-         chunks:["main","project"],
-         minify: {
-          removeAttributeQuotes: true,
-          collapseWhitespace: true,
-          removeComments: true
-        }
-        }),
-         new HtmlWebpackPlugin({ 
-         inject:'body',
-         template: "./src/ccc-hymns-android/index.html",
-         favicon: "./src/favicon.ico",
-        filename: "ccc-hymns-android/index.html",
-         chunks:["main","project"],
-         minify: {
-          removeAttributeQuotes: true,
-          collapseWhitespace: true,
-          removeComments: true
-        }
-      }),
     ]
   },
   plugins: [

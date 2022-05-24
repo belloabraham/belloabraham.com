@@ -23,34 +23,6 @@ module.exports = merge(common, {
       template: "./src/404.html",
       chunks:['main','error'] //What script to inject for template, defaults to index
     }),
-     new HtmlWebpackPlugin({
-      inject:'body',
-      filename:"bsh-android/index.html", 
-      favicon: "./src/favicon.ico",
-      template: "./src/bsh-android/index.html",
-      chunks:['main','project'] 
-     }),
-      new HtmlWebpackPlugin({
-      inject:'body',
-      filename:"bsh-webiste/index.html", 
-      favicon: "./src/favicon.ico",
-      template: "./src/bsh-website/index.html",
-      chunks:['main','project'] 
-      }),
-       new HtmlWebpackPlugin({
-      inject:'body',
-      filename:"bsh-angular/index.html", 
-      favicon: "./src/favicon.ico",
-      template: "./src/bsh-angular/index.html",
-      chunks:['main','project'] 
-       }),
-        new HtmlWebpackPlugin({
-      inject:'body',
-      filename:"ccc-hymns-android/index.html", 
-      favicon: "./src/favicon.ico",
-      template: "./src/ccc-hymns-android/index.html",
-      chunks:['main','project'] 
-    }),
   ],
   module: {
     rules: [

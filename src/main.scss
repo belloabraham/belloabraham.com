@@ -3,6 +3,19 @@
 @forward './scss/animation/gsap-reveal';
 @use './scss/variables/colors'as *;
 
+.w-100{
+    width: 100% !important;
+}
+
+.bg-white{
+    background-color: white !important;
+}
+
+ hr {
+     height: 0.1px;
+     width: 100%;
+     border: none !important;
+ }
 
 .my-1 {
     margin-top: 1rem;
@@ -57,7 +70,9 @@ body {
 ol,
 ul {
     list-style: none !important;
-    padding: 0;
+}
+ul{
+     padding: 0;
 }
 
 a {

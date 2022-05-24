@@ -1,15 +1,159 @@
 @forward './scss/header';
 @forward './scss/footer';
 @use './scss/variables/colors'as *;
+@use './scss/utils/breakpoints'as *;
+
 
 $secondary-light: #053865;
+
+.portfolio {
+    flex-wrap: wrap;
+
+    .btn {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: liber;
+        width: 100%;
+
+        .text {
+            gap: .5rem;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                margin-top: -4px;
+            }
+        }
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0 !important;
+    }
+
+    h5 {
+        font-size: 1rem;
+        margin-bottom: 0 !important;
+        margin-top: 1rem !important;
+        text-transform: uppercase;
+    }
+
+    a {
+        color: white;
+    }
+
+    .content {
+        p {
+           color: $gray-300;
+        }
+    }
+
+
+
+    .item-container {
+        margin: 2rem .8rem;
+        margin-top: 0;
+        width: 320px;
+
+        @include tablet {
+            width: 512px;
+        }
+
+    }
+
+    @include mobileOnly {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        position: relative;
+        height: 256px;
+
+        .icon {
+            width: 96px;
+            height: 96px;
+            border-radius: 25px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            transform: scale(1.2);
+            transition: all .5s;
+
+            svg {
+                width: auto;
+                height: 66px;
+            }
+
+        }
+
+        &:hover {
+
+            .icon,
+            .item-stack {
+                transform: scale(1.5);
+            }
+
+            .arrow,
+            .overlay {
+                opacity: 1;
+            }
+        }
+
+        .arrow {
+            fill: white;
+            width: 48px;
+            transition: all, .5s;
+            opacity: 0;
+            height: auto;
+            position: absolute;
+            margin: auto;
+            z-index: 210;
+        }
+
+        .overlay {
+            position: absolute;
+            transition: all,
+                .5s;
+            top: 0;
+            opacity: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 200;
+            background-color: rgba($color: #000, $alpha: 0.5);
+        }
+
+        .item-stack {
+            position: absolute;
+            bottom: 8px;
+            width: 39px;
+            height: auto;
+            transform: scale(1);
+            transition: all .4s ease-in-out;
+
+            &.web,
+            &.angular {
+                width: 32px;
+            }
+        }
+    }
+
+    .project-name {
+        transition: all .5s ease;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 
 .projects {
     color: $gray-200;
 }
 
-.about{
-    p{
+.about {
+    p {
         font-size: 1.3rem;
         letter-spacing: 1px;
     }
@@ -149,11 +293,12 @@ $secondary-light: #053865;
 
 .main-content {
     margin-top: 4rem;
-    h1{
+
+    h1 {
         font-size: 2.5rem;
     }
 
-    p{
+    p {
         font-size: 1.5rem;
         letter-spacing: 1px;
     }

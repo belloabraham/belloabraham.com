@@ -3,7 +3,6 @@ module.exports = {
     main: "./src/main.js",
     index: "./src/index.js", //Js for a particular page, wll also contain css for that page,
     error: "./src/404.js",
-    project: "./src/project.js",
   },
   module: {
     rules: [

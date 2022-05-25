@@ -1,4 +1,4 @@
-$foreground:#000;
+$foreground:#ffffff;
 .preloader {
     background-color: #13aa52;
     overflow: hidden;
@@ -6,12 +6,6 @@ $foreground:#000;
     height: 100vh;
     position: fixed;
     z-index: 2000;
-    h1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -48px;
-}
 }
 
 

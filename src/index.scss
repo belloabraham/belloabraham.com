@@ -2,12 +2,19 @@
 @forward './scss/footer';
 @use './scss/variables/colors'as *;
 @use './scss/utils/breakpoints'as *;
+@forward './scss/components/preloader';
 
 
 $secondary-light: #053865;
 
 .portfolio {
     flex-wrap: wrap;
+
+    .technology{
+       a{
+           color: $gray-200;
+       }
+    }
 
     .btn {
         text-transform: uppercase;

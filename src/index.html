@@ -127,12 +127,10 @@
                     <div class="flex justify-center flex-column">
 
                         <h1 class="gsap-reveal-text">Hi 👋🏽, My name is Abraham, <br> I am a Software Engineer.</h1>
-                        <div class="gsap-reveal-text" style="font-family: looker;">
+                        <div class="gsap-reveal-text">
                             <p>I have eight years of experience in my field, and <br> I am a specialist in my
-                                discipline.</p>
-                           Contact form section with email js,
-                            notiflix and validate, SEO, CCC Hymns logo for project,
-                            My Personal self pic, All links on website
+                                discipline.</p>SEO, CCC Hymns logo for project,
+                            My Personal self pic, All links on website, copy and medium blog
                         </div>
 
 
@@ -333,8 +331,8 @@
             <div class="container">
                 <header class="text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                     data-aos-duration="1000" class="text-center">
-                    <h2>Projects</h2>
-                    <h3>
+                    <h2 class="gsap-reveal-text">Projects</h2>
+                    <h3 class="gsap-reveal-text">
                         The projects below are single-handedly built by me.</h3>
                 </header>
 
@@ -660,6 +658,46 @@
                 </header>
 
 
+                <div class="flex form-wrapper justify-center items-center">
+                    <div class="img">
+                        <img src="./images/mail.png" alt="Message">
+                    </div>
+
+                    <div>
+                        <form id="contact-form" class="contact-form">
+                            <input type="hidden" name="contact_number">
+                            <div class="omrs-input-group">
+                                <label class="omrs-input-filled">
+                                    <input type="text" class="form-input" name="user_name">
+                                    <span class="omrs-input-label">Name</span>
+                                    <span class="omrs-input-helper">Name is required</span>
+                                </label>
+                            </div>
+
+                            <div class="omrs-input-group">
+                                <label class="omrs-input-filled">
+                                    <input type="email" class="form-input" name="user_email">
+                                    <span class="omrs-input-label">Email</span>
+                                    <span class="omrs-input-helper">A valid email is required</span>
+                                </label>
+                            </div>
+
+                            <div class="omrs-input-group">
+                                <label class="omrs-input-filled">
+                                    <textarea name="message" class="form-input" rows="5"></textarea>
+                                    <span class="omrs-input-label">Message</span>
+                                    <span class="omrs-input-helper">Message is required</span>
+                                </label>
+                            </div>
+
+                            <button class="btn btn-fill g-recaptcha"
+                                data-sitekey="6LdRfhsgAAAAALJAiR4fEbLxD1Z5LOlD9iFC9cW2" data-callback='onSubmit'
+                                type="submit">Send Mail</button>
+
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -691,7 +729,7 @@
                         natural thing for me. <br>
                         In addition I am currently teaching every Sunday at the Church (teaching the word of God at the
                         bible lesson class). <br> To conclude, I
-                        would love to add value to you, won't you rather do business with me?
+                        would love to add value to you, won't you rather work with me?
                     </p>
 
                 </div>
@@ -791,6 +829,9 @@
             </div>
 
         </footer>
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     </body>
 
 </html>

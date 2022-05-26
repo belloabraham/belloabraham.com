@@ -1,5 +1,6 @@
 @use './utils/breakpoints'as *;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 
 @font-face {
     font-family: liber;
@@ -8,16 +9,11 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: looker;
-    src: url('fonts/looker-ultrabold-webfont.woff2') format('woff2'),
-    url('fonts/looker-ultrabold-webfont.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
 
 body {
-    font-family: looker;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-weight: 500;
 }
 
 html {
@@ -27,6 +23,12 @@ html {
     }
 }
 
-h1,h3, h4, h2, h5, h6{
+h1,
+h2 {
     font-family: liber;
 }
+
+h3, h4,h5, h6{
+   font-weight: 600;
+}
+

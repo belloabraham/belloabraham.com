@@ -155,7 +155,8 @@ $slide: all 0.3s cubic-bezier(.55, 0, .1, 1);
         text-decoration: none;
         color: $gray-200;
         padding: 10px 0;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
 
         &:hover {
             text-decoration: underline;

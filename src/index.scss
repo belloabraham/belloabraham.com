@@ -3,22 +3,42 @@
 @use './scss/variables/colors'as *;
 @use './scss/utils/breakpoints'as *;
 @forward './scss/components/preloader';
+@forward './scss/components/form';
 
 
 $secondary-light: #053865;
 
+.form-wrapper {
+
+    gap: 5rem;
+
+    button.btn {
+          width: 21.5rem;
+    }
+
+    textarea{
+            resize: vertical;
+    }
+
+    @include mobileOnly {
+        img {
+            display: none;
+        }
+        gap: 0;
+    }
+}
+
 .portfolio {
     flex-wrap: wrap;
 
-    .technology{
-       a{
-           color: $gray-200;
-       }
+    .technology {
+        a {
+            color: $gray-200;
+        }
     }
 
     .btn {
         text-transform: uppercase;
-        font-size: 1rem;
         font-family: liber;
         width: 100%;
 
@@ -51,7 +71,7 @@ $secondary-light: #053865;
 
     .content {
         p {
-           color: $gray-300;
+            color: $gray-300;
         }
     }
 
@@ -149,6 +169,7 @@ $secondary-light: #053865;
 
     .project-name {
         transition: all .5s ease;
+
         &:hover {
             text-decoration: underline;
         }
@@ -157,13 +178,6 @@ $secondary-light: #053865;
 
 .projects {
     color: $gray-200;
-}
-
-.about {
-    p {
-        font-size: 1.3rem;
-        letter-spacing: 1px;
-    }
 }
 
 .tech-stack {
@@ -306,8 +320,7 @@ $secondary-light: #053865;
     }
 
     p {
-        font-size: 1.5rem;
-        letter-spacing: 1px;
+        font-size: 1.2rem;
     }
 }
 

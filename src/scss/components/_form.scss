@@ -1,4 +1,4 @@
-
+@use '../utils/breakpoints' as  *;
 :root {
     --omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
     --omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
@@ -16,7 +16,9 @@ div.omrs-input-group {
     margin-bottom: 1.5rem;
     position: relative;
     width: 20.4375rem;
-    font-family: liber;
+    @include tablet{
+       width: 40rem;
+    }    
 }
 
 /* Input*/

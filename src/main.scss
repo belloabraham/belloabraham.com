@@ -79,34 +79,3 @@ a {
     text-decoration: none;
     transition: all 0.4s ease-in-out;
 }
-
-
-section {
-    padding: 3rem 1rem !important; 
-
-    header {
-        h2 {
-            font-size: 2rem;
-        }
-
-        h3 {
-            font-size: 1.3rem;
-        }
-
-        margin-bottom: 4rem !important;
-    }
-
-    .btn-container {
-        text-align: center;
-    }
-}
-
-@media (min-width:768px) {
-    section {
-        padding: 2rem;
-
-        .btn-container {
-            text-align: start;
-        }
-    }
-}

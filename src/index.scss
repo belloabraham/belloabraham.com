@@ -55,13 +55,12 @@ section {
 
     .technology {
         a {
-            color: $gray-200;
+            color: white;
         }
     }
 
     .btn {
         text-transform: uppercase;
-        font-family: liber;
         width: 100%;
 
         .text {
@@ -93,7 +92,7 @@ section {
 
     .content {
         p {
-            color: $gray-300;
+            color: rgba($color: #ffffff, $alpha: .9)
         }
     }
 
@@ -203,7 +202,7 @@ section {
 .projects {
     color: $gray-200;
     h4{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     h5{
         font-size: 1.1rem;
@@ -336,7 +335,7 @@ section {
 }
 
 .main, .projects {
-    color: white;
+  color: white;
     background-image: radial-gradient(circle farthest-corner at -1% 57.5%, rgba(19, 170, 82, 1) 0%, rgba(0, 102, 43, 1) 90%);
 }
 

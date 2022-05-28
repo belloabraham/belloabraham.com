@@ -1,34 +1,33 @@
-@use './utils/breakpoints'as *;
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@use './utils/breakpoints' as *;
 
 @font-face {
-    font-family: liber;
-    src: url('fonts/LiberGrotesqueFamily-Bold.ttf') format('truetype');
+    font-family: 'maven';
+    src: url('fonts/MavenPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'maven';
+    src: url('fonts/MavenPro-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
-
 body {
-    font-family: 'Montserrat',
-    sans-serif;
+    font-family: maven, sans-serif;
     font-weight: 500;
 }
 
 html {
-    font-size: 100%;
+    font-size: 110%;
     @include hiResDisp {
-        font-size: 150%;
+        font-size: 140%;
     }
 }
 
-h1,
-h2 {
-    font-family: liber;
-}
 
-h3, h4,h5, h6{
-   font-weight: 600;
+h3, h4,h5, h6, h1, h2 {
+    font-weight: 700;
 }
 

@@ -1,6 +1,5 @@
 {
   "name": "belloabraham.com",
-  "sideEffects": ["./src/reveal.js","*.scss"],
   "version": "1.0.0",
   "description": "My Portfolio",
   "main": "index.js",

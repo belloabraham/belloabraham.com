@@ -15,7 +15,6 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, "dist")
   },  
   optimization: {
-    usedExports: true,
     minimizer: [
       new CssMinimizerPlugin(),
       new TerserPlugin(), //Split css out of js and make pure css from common js css

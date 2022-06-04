@@ -17,7 +17,12 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [
       new CssMinimizerPlugin(),
-      new TerserPlugin(), //Split css out of js and make pure css from common js css
+      new TerserPlugin({
+        terserOptions: {
+              keep_fnames: /onSubmit/
+            }
+      }), //Split css out of js and make pure css from common js css
+      
       new HtmlWebpackPlugin({ 
         template: "./src/index.html", //Template to inject js 
         inject:'body', //Where to inject js in template defaults to head

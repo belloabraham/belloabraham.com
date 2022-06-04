@@ -4,14 +4,6 @@ import Notiflix from "notiflix";
 
 emailjs.init("m4OyE3Sm8ICuVh9gq");
 
-let isLoaded = false;
-
-function onSubmit() {
-  if (isLoaded) {
-    Notiflix.Block.standard(".contact-form", "Sending email, please wait.");
-    document.getElementById("contact-form").submit();
-  }
-}
 
 (function ($) {
   "use strict";
@@ -22,12 +14,11 @@ function onSubmit() {
   const email = $('.omrs-input-group input[name="user_email"]');
   const message = $('.omrs-input-group textarea[name="message"]');
 
-  onSubmit();
-
-  isLoaded = true;
-
   $(".contact-form").on("submit", function (event) {
     event.preventDefault();
+
+    Notiflix.Block.standard(".contact-form", "Sending email, please wait.");
+    
     let check = true;
 
     if ($(name).val().trim() == "") {

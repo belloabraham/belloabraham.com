@@ -5,6 +5,7 @@
     src: url('fonts/MavenPro-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,10 +13,11 @@
     src: url('fonts/MavenPro-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 body {
-    font-family: maven, sans-serif;
+    font-family: maven;
     font-weight: 500;
 }
 

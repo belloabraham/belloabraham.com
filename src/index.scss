@@ -357,9 +357,13 @@ section {
 
 .bello-abraham {
     img {
-       width: 16rem;
+       width: 281.5px;
         margin-top: 2rem;
-        height: auto;
+        height: 352.41px;
+        @include hiResDisp{
+            width: 384px;
+            height: 480.75px;
+        }
     }
 
 }

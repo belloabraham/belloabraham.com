@@ -1,9 +1,10 @@
 {
   "hosting": {
     "public": "dist",
+    "cleanUrls": true,
     "header": [
       {
-        "source": "**/*.@(ttf)",
+        "regex": ".[a-z0-9].+(ttf)$",
         "headers": [
           {
             "key": "Cache-Control",
@@ -12,7 +13,7 @@
         ]
       },
       {
-        "source": "**/*.@(js|css)",
+        "regex": ".[a-z0-9].+(js|css)$",
         "headers": [
           {
             "key": "Cache-Control",
@@ -21,7 +22,7 @@
         ]
       },
       {
-        "source": "**/*.@(jpg|jpeg|gif|png|webp|svg)",
+        "regex": ".[a-z0-9].+(jpg|jpeg|gif|png|webp|svg)$",
         "headers": [
           {
             "key": "Cache-Control",

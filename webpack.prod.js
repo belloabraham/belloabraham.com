@@ -46,7 +46,8 @@ module.exports = merge(common, {
   plugins: [
      new CopyPlugin({
       patterns: [
-        { from: "./src/humans.txt", to: "." },
+         { from: "./src/humans.txt", to: "." },
+        { from: "./src/images/cover.jpg", to: "." },
       ],
     }),
     new MiniCssExtractPlugin({ filename: "[name].[contenthash].min.css" }), //3. Rename CSS with hash as file changes and .min ext then move to style file

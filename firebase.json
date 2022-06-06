@@ -4,6 +4,13 @@
     "cleanUrls": true,
     "header": [
       {
+      "source": "cover.jpg",
+      "headers": [ {
+        "key": "Access-Control-Allow-Origin",
+        "value": "*"
+      } ]
+    },
+      {
         "regex": ".[a-z0-9].+(ttf)$",
         "headers": [
           {

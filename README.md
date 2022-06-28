@@ -1,3 +1,3 @@
 Sample readme file
 
-Updated redme file
+Updated readme file

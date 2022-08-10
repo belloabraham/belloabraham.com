@@ -22,7 +22,7 @@ module.exports = merge(common, {
         template: "./src/index.html", //Template to inject js 
         inject:'body', //Where to inject js in template defaults to head
         favicon: "./src/favicon.ico", //Favicon to inject in head of template
-         chunks:["main","index"],
+         chunks:["global","index"],
         minify: {
             removeAttributeQuotes: true,
             collapseWhitespace: true,
@@ -34,7 +34,7 @@ module.exports = merge(common, {
          template: "./src/404.html",
          favicon: "./src/favicon.ico",
         filename: "404.html",
-         chunks:["main","error"],
+         chunks:["global","error"],
          minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,

@@ -14,14 +14,14 @@ module.exports = merge(common, {
       template: "./src/index.html", //Template to inject js and commonjs css
      // inject:'body', //Where to inject js and commonjs css for styles in template, defaults to head
       favicon: "./src/favicon.ico", //locaton of favicon to inject in template head
-      chunks:['main','index'] 
+      chunks:['global','index'] 
     }),
     new HtmlWebpackPlugin({
       inject:'body',
       filename:"404.html", //Name of the file to copy to dist folder in prod, defaults to index
       favicon: "./src/favicon.ico",
       template: "./src/404.html",
-      chunks:['main','error'] //What script to inject for template, defaults to index
+      chunks:['global','error'] //What script to inject for template, defaults to index
     }),
   ],
   module: {

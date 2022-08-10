@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    main: "./src/main.js",
+    global: "./src/global.js",
     index: "./src/index.js", //Js for a particular page, wll also contain css for that page,
     error: "./src/404.js",
   },
